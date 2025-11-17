@@ -671,13 +671,16 @@ footer {
 
 
 
-nav a {
-  transition: 0.3s ease;
+
+
+
+.page-fade {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
 }
 
-nav a:hover {
-  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-  color: cyan;
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
 .float {
   animation: float 3s ease-in-out infinite;
@@ -686,9 +689,6 @@ nav a:hover {
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
-}
-.page-fade {
-  animation: fadeIn 1s ease-in-out;
 }
 .typewriter {
   overflow: hidden;
