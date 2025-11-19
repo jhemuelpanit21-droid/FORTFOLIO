@@ -668,3 +668,69 @@ footer {
   }
 }
 /* End of Mecha-Themed Portfolio Styling */
+
+
+
+nav a {
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  color: cyan;
+}
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.page-fade {
+  animation: fadeIn 1s ease-in-out;
+}
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid cyan;
+  white-space: nowrap;
+  animation: typing 2.5s steps(20), blink .7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid cyan;
+  animation:
+    typing 2.5s steps(20) forwards,
+    blink 0.7s step-end 2.5s 3; /* blink only 3 times */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
