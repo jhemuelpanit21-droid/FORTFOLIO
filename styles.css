@@ -741,3 +741,28 @@ h1 {
   border-right: 2px solid cyan;
   box-shadow: inset -3px 0 8px cyan;
 }
+
+
+
+
+/* Animated Gradient Background */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0a0f24, #161b33, #2a2f4f, #4b5ea3);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  font-family: Arial, sans-serif;
+}
+
+/* Animation Keyframes */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+body {
+  background: linear-gradient(135deg, #001f3f, #003f7f, #005f9f, #007fff);
+  background-size: 500% 500%;
+  animation: gradientFlow 10s linear infinite;
+}
