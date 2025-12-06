@@ -6,13 +6,13 @@ const projectDetails = {
   },
   2: {
     title: "Assignment 2",
-    description: "A clean and structured web design assignment demonstrating mastery of HTML and CSS layouts.",
-    link: "https://jhemuelpanit21-droid.github.io/asinment-2/"
+    description: "A habit tracker application to help users monitor and maintain their daily habits effectively.",
+    link: "https://sahar110201.github.io/habit-tracker/"
   },
   3: {
     title: "Tasty Bites",
     description: "A delicious exploration of culinary delights.",
-    link: "https://jhemuelpanit21-droid.github.io/exercise-4/"
+    link: "https://sahar110201.github.io/habit-tracker/"
   }
 };
 
@@ -53,3 +53,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   items.forEach(item => observer.observe(item));
 });
+
+
+
+
+
+
+
+
+
+
+
+
